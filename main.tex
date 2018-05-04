@@ -1,4 +1,4 @@
-\documentclass[preprint2]{aastex62}
+\documentclass[twocolumn]{aastex62}
 
 \usepackage{natbib}
 % \bibliographystyle{apj}
@@ -37,7 +37,7 @@ M dwarf stellar activity evolution as determined in the near-UV (NUV) and far-UV
 
 %Activity indicators such as FUV levels can also be used to estimate other parameters, such as radial velocity (RV) jitter (Cegla et al. 2014), a limiting factor to the precise RVs needed to confirm and weigh exoplanets. This becomes important when prioritizing RV confirmation and characterization of planets for surveys such as Kepler (Cegla et al. 2014) or TESS, where hefty amounts of data are received. Currently, however, this estimate is only valid for FG stars. Therefore, work is needed to apply this relation to stars that are far more likely to host habitable exoplanets.
 
-The implications of this research will be vital in determining the potentially super-habitability of planets orbiting K dwarfs by fully characterizing the UV spectral range that oversees the life-cycle of a planetary atmosphere.
+The implications of this work will be vital in determining the potentially super-habitability of planets orbiting K dwarfs by fully characterizing the UV spectral range that oversees the life-cycle of a planetary atmosphere.
 
 Don't forget proxima flare paper.
 \input{massestimates}
@@ -81,26 +81,34 @@ Spectral types are different per age - K0 young is not K0 old. We went with mass
 
 \section{GALEX Photometry}\label{sec:photometry}
 
-Since GALEX ran from 2003 to 2012, we proper motion corrected our targets to the average J2007 since we did not know the observation dates beforehand. We then cross referenced our sample to GALEX using the GALEXview tool\footnote{http://galex.stsci.edu/galexview/} with a search radius of 10". [equation?] The NUV and FUV detectors go non-linear at 104 counts s$^{-1}$ and 34 counts s$^{-1}$, respectively, correlating to a magnitude of ~15 for both NUV and FUV. Measured magnitudes < 15 were thus excluded from our data. Additionally, we excluded detections with photometric flags for bright star window reflection, dichroic reflection, detector run proximity, or bright star ghost. We visually inspected the GALEX tiles for each observation to ensure that there was no contamination that was not caught by the flags. 
+\begin{figure*}[t]
+\includegraphics[width=\linewidth]{galex_observations.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:galex_observations}}
+\end{figure*}
 
-% \begin{figure*}
-% \includegraphics[width=\linewidth]{galex_observations.pdf}
-% \caption{Filler image for now. Need to fix scaling. \label{fig:galex_observations}}
-% \end{figure*}
 
-\begin{figure*}
+Since GALEX ran from 2003 to 2012, we proper motion corrected our targets to the average J2007 since we did not know the observation dates beforehand. We then cross referenced our sample to GALEX using the GALEXview tool\footnote{http://galex.stsci.edu/galexview/} with a search radius of 10". [equation?] The NUV and FUV detectors go non-linear at 104 counts s$^{-1}$ and 34 counts s$^{-1}$, respectively, correlating to a magnitude of $\approx$15 for both NUV and FUV. Measured magnitudes less than 15 were thus excluded from our data. Additionally, we excluded detections with photometric flags for bright star window reflection, dichroic reflection, detector run proximity, or bright star ghost. We visually inspected the GALEX tiles for each observation to ensure that there was no contamination that was not caught by the flags. 
+
+
+
+\begin{figure*}[h]
 \centering
 \includegraphics[width=.9\linewidth]{massdistributions_nuv.pdf}
 \caption{Filler image for now. Need to fix scaling. \label{fig:massdistributions_nuv}}
 \end{figure*}
 
-\begin{figure*}
+\begin{figure*}[h]
 \centering
 \includegraphics[width=.9\linewidth]{massdistributions_fuv.pdf}
 \caption{Filler image for now. Need to fix scaling. \label{fig:massdistributions_fuv}}
 \end{figure*}
 
-A comparison of the number of objects that were in our input sample, observed by GALEX, and then detected with useful photometry can be seen in Figure \ref{fig:massdistributions_nuv}. [comment on these percentages]
+\begin{figure*}[th]
+\includegraphics[width=\linewidth, height=3in]{massfractions.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:mass_fractions}}
+\end{figure*}
+
+A comparison of the number of objects that were in our input sample, observed by GALEX, and then detected with useful photometry can be seen in Figure \ref{fig:galex_observations}. [comment on these percentages]
 
 For some objects there were multiple observations with multiple exposure times, in which case we took the weighted mean of the magnitude as our measurement and the weighted standard deviations as our uncertainty.
 
@@ -111,23 +119,78 @@ Some objects were detected by GALEX but not observed. In this case, we calculate
 
 \section{Evolution of the Photospheric UV Emission}
 
+\begin{figure*}[th]
+\includegraphics[width=\linewidth]{mfd_vs_age.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:mvd_vs_age}}
+\end{figure*}
+
 \section{Results}
 
 in section \ref{sec:photometry}
 
-
-
-
-
 \subsection{Photospheric Contribution}
 
-\subsection{Intra-Age Stellar Variability}
+\begin{figure*}[h]
+\includegraphics[width=\linewidth]{phot_obs.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:phot_obs}}
+\end{figure*}
 
 \subsection{Evolution of the NUV and FUV Emission}
 
+\begin{figure*}[h]
+\includegraphics[width=\linewidth]{ffdensity_age_NO_J.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:ffdensity_age}}
+\end{figure*}
+
+\begin{figure*}[h]
+\includegraphics[width=\linewidth]{histfd_NO_J.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:histfd}}
+\end{figure*}
+
+
 \subsection{The Relationship Between GALEX FUV and NUV for K Stars}
 
-\section{Conclusions}
+\begin{figure*}[h]
+\includegraphics[width=\linewidth]{nuv_vs_fuv_NO_J.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:nuv_vs_fuv}}
+\end{figure*}
+
+\begin{figure*}[h]
+\includegraphics[width=\linewidth]{fuv_nuv_vs_mass_NO_J.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:fuv_nuv_vs_mass}}
+\end{figure*}
+
+\subsubsection{Scatter}
+
+\begin{figure*}[h]
+\includegraphics[width=\linewidth]{R2_vs_spt.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:r2_vs_spt}}
+\end{figure*}
+
+\section{X-Ray Evolution}
+
+\begin{figure*}[h]
+\includegraphics[width=\linewidth]{xray_evolution.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:xray_evolution}}
+\end{figure*}
+
+\begin{figure*}[h]
+\includegraphics[width=\linewidth]{uv_vs_xray_NO_J.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:uv_vs_xray}}
+\end{figure*}
+
+\begin{figure*}[h]
+\centering
+\includegraphics[height=\textheight]{histfd_xray.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:histfd_xray}}
+\end{figure*}
+
+\section{Summary}
+
+\begin{figure*}[h]
+\includegraphics[width=\linewidth]{planet_timeline_NO_J.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:planet_timeline}}
+\end{figure*}
 
 \bibliography{bibliography}
 
