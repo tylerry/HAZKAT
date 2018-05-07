@@ -17,7 +17,7 @@
 
 \title{HAZKAT IV: The UV Evolution of K Stars}
 
-\author{Tyler Richey-Yowell, Adam Schneider, Evgenya Shkolnik, ...}
+\author{Tyler Richey-Yowell, Adam Schneider, Evgenya Shkolnik, and Ella Osby}
 \affil{School of Earth and Space Exploration, Arizona State University, Tempe, AZ 85281, USA}
 \email{tricheyy@asu.edu}
 
@@ -45,6 +45,11 @@ Don't forget proxima flare paper.
 planet occurence rate valuable
 dn / dspt
 
+\begin{figure*}[th]
+\includegraphics[width=\linewidth]{galex_observations.pdf}
+\caption{Filler image for now. Going to make this a table instead. \label{fig:galex_observations}}
+\end{figure*}
+
 \section{The K dwarf Advantage}\label{sec:advantage}
 
 The UV radiation incident on a planet is one of the most important factors in determining if that planet is potentially habitable and if any biosignatures will be detectable. UV radiation ionizes and photodissociates some of the most important molecules for the detection of life, e.g. H2O, CH4, and CO2, with potential for complete erosion \citep[e.g.][]{Kasting1993, Lichtenegger2010, Segura2010, Hu2012}. Additionally, UV radiation can impact the photochemistry of the atmospheres in the production of hazes in depleting atmospheres \citep{Zerkle2012, Arney2017}
@@ -57,9 +62,11 @@ While current popularity resides among M dwarfs for the most likely to host iden
 %vheck arney
 has confirmed that there is a similar “K dwarf advantage” and that a planet orbiting a K6V star has the potential to produce detectable CH4 and O2. K dwarf UV evolution is thus critical for determining planetary habitability.
 
+
+
 \section{K Dwarf Sample}\label{sec:sample}
 
-We consider the young moving groups and clusters in \citet{Shkolnik2014} and \citet{Schneider2018} as well as three additional associations ranging in age from 10 Myr to 625 Myr. The associations included are TW Hydra (10 Myr, \citealt{Bell2015}), Beta Pictoris (22 Myr, \citealt{Shkolnik2017}), Carina (40 Myr, \citealt{Torres2008}), Columba (45 Myr, \citealt{Zuckerman2011}), Tucana-Horologium (45 Myr, \citealt{Bell2015}), AB Doradus (149 Myr, \citealt{Bell2015}), Ursa Majoris (300 Myr, \citealt{King2005}), Praesepe (600 Myr, \citealt{Kraus2007}), and Hyades (625 Myr, \citealt{Perryman1997}), in addition to field stars (taken to be 5 Gyr).
+We consider the young moving groups and clusters ranging in age from 10 Myr to 625 Myr in \citet{Shkolnik2014} and \citet{Schneider2018} as well as three additional associations in the intermediate mass range. The associations included are TW Hydra (10 Myr, \citealt{Bell2015}), Beta Pictoris (22 Myr, \citealt{Shkolnik2017}), Carina (40 Myr, \citealt{Torres2008}), Columba (45 Myr, \citealt{Zuckerman2011}), Tucana-Horologium (45 Myr, \citealt{Bell2015}), AB Doradus (149 Myr, \citealt{Bell2015}), Ursa Majoris (300 Myr, \citealt{King2005}), Praesepe (600 Myr, \citealt{Kraus2007}), and Hyades (625 Myr, \citealt{Perryman1997}), in addition to field stars (taken to be 5 Gyr).
 
 Taking into account the wide range of ages in this study, we must consider how similar spectral types represent different masses over various ages. 
 
@@ -76,18 +83,15 @@ We got the members from these papers:
 Spectral types are different per age - K0 young is not K0 old. We went with masses 0.6 -- 0.9 M$_{\odot}$ but allowed one step lower and higher to account for spectral type uncertainty.
 
 
-
+Due to the low number of K dwarf members in some of the age ranges, we combined groups of similar age ranges. We analyze five groups represented for the remainder of this paper by a single member of that age: TW Hydra (TW Hydra and Beta Pictoris), Tucana-Horologium (Tucana-Horologium, Carina, and Columba), AB Doradus (AB Doradus and Ursa Majoris), Hyades (Hyades and Praesepe), and Field stars. 
 
 
 \section{GALEX Photometry}\label{sec:photometry}
 
-\begin{figure*}[t]
-\includegraphics[width=\linewidth]{galex_observations.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:galex_observations}}
-\end{figure*}
 
 
-Since GALEX ran from 2003 to 2012, we proper motion corrected our targets to the average J2007 since we did not know the observation dates beforehand. We then cross referenced our sample to GALEX using the GALEXview tool\footnote{http://galex.stsci.edu/galexview/} with a search radius of 10". [equation?] The NUV and FUV detectors go non-linear at 104 counts s$^{-1}$ and 34 counts s$^{-1}$, respectively, correlating to a magnitude of $\approx$15 for both NUV and FUV. Measured magnitudes less than 15 were thus excluded from our data. Additionally, we excluded detections with photometric flags for bright star window reflection, dichroic reflection, detector run proximity, or bright star ghost. We visually inspected the GALEX tiles for each observation to ensure that there was no contamination that was not caught by the flags. 
+
+Since GALEX ran from 2003 to 2012, we proper motion corrected our targets to the average J2007 since we did not know the observation dates beforehand. We then cross referenced our sample to GALEX using the GALEXview tool\footnote{http://galex.stsci.edu/galexview/} with a search radius of 10". The NUV and FUV detectors are non-linear at 104 counts s$^{-1}$ and 34 counts s$^{-1}$, respectively, correlating to a magnitude of $\approx$15 for both NUV and FUV. Measured magnitudes less than 15 were thus excluded from our data. Additionally, we excluded detections with photometric flags for bright star window reflection, dichroic reflection, detector run proximity, or bright star ghost. We visually inspected the GALEX tiles for each observation to ensure that there was no contamination that was not caught by the flags. 
 
 
 
@@ -108,7 +112,7 @@ Since GALEX ran from 2003 to 2012, we proper motion corrected our targets to the
 \caption{Filler image for now. Need to fix scaling. \label{fig:mass_fractions}}
 \end{figure*}
 
-A comparison of the number of objects that were in our input sample, observed by GALEX, and then detected with useful photometry can be seen in Figure \ref{fig:galex_observations}. [comment on these percentages]
+A comparison of the number of objects that were in our input sample, observed by GALEX, and then detected with useful photometry can be seen in Figure \ref{fig:galex_observations}. [comment on these percentages or make a table]
 
 For some objects there were multiple observations with multiple exposure times, in which case we took the weighted mean of the magnitude as our measurement and the weighted standard deviations as our uncertainty.
 
@@ -119,16 +123,24 @@ Some objects were detected by GALEX but not observed. In this case, we calculate
 
 \section{Evolution of the Photospheric UV Emission}
 
-\begin{figure*}[th]
+One of the goals of the HAZMAT program is to provide measurements of FUV and NUV flux densities for low-mass stellar models. While work is currently be carried out to include include contributions from chromospheres, transition regions, or coronae (i.e. Peacock et al. 2015, Fontenla et al. 2016), most of these models currently do not include these vital aspects. We thus are interested exclusively in the contribution of the photosphere. 
+
+The PHOENIX stellar atmosphere models (Hauschildt et al. 1997, Short & Hauschildt 2005) were used to calculate the photosphere (i.e. without the contributions of the chromosphere, transition regions, or coronae) NUV and FUV flux densities of each of our K dwarfs in our sample using the stellar masses derived in Table num and the age of the star. The evolution of the NUV, FUV, and J band flux densities for select masses from 0.3 to 1.0 Msol can be seen in Figure num.  As the mass increases, the photospheric contribution becomes greater. 
+Figure num shows the fraction of the flux density is strictly from the photosphere compared the the absolute observed values for the YMG members and Field stars as a function of both mass and age. The NUV is almost exclusively photospheric, with most of the contribution being between 10 and 100$\%$. Values reported that were larger than 100$\%$ are due to uncertainties in both the mass and age of the star and were taken to be 100$\%$ photospheric. The photospheric FUV flux density was typically $<1\%$. For both the NUV and the FUV we see a decrease in photospheric flux with decreasing mass, although this trend is much steeper for the FUV, where the photospheric contribution becomes negligible. With increasing age, we see an increase in photospheric contribution equally for both NUV and FUV flux densities. 
+For each of the YMG members and field stars, we subtract the photospheric contribution derived from the PHOENIX models from the absolute observed GALEX flux densities to calculate the excess emission, representative of upper-atmosphere activity. 
+
+
+
+
+
+\begin{figure*}[bh]
 \includegraphics[width=\linewidth]{mfd_vs_age.pdf}
 \caption{Filler image for now. Need to fix scaling. \label{fig:mvd_vs_age}}
 \end{figure*}
 
-\section{Results}
+\section{Analysis}
 
-in section \ref{sec:photometry}
 
-\subsection{Photospheric Contribution}
 
 \begin{figure*}[h]
 \includegraphics[width=\linewidth]{phot_obs.pdf}
@@ -136,6 +148,19 @@ in section \ref{sec:photometry}
 \end{figure*}
 
 \subsection{Evolution of the NUV and FUV Emission}
+
+
+With the first data release of GAIA, we have more accurate distances to our objects. Therefore, we investigate the absolute GALEX NUV and FUV flux densities rather than analyzing tem relative to the Two Micron All-Sky Survey (2MASS) J-band, such as in SB14 and SS18. To explore the evolutionary trends, we convert the GALEX reported magnitudes to flux densities in uJy using
+equation
+where mGALEX is either a GALEX FUV or NUV magnitude. These values were then translated to a distance of 10 pc using the known distances from GAIA DR1\footnote{website}. To compare flux versus flux density values, please see the Appendix of SS18. 
+Because we are interested in the excess UV contribution from the K dwarfs, we calculated the photospheric contribution using the PHOENIX models as described in section \ref{photo} and subtracted these from the flux density calculations reported in GALEX. 
+
+To calculate the median values with the inclusion of the upper limits, we performed a survival analysis (that I still have to do and will write more about). 
+
+Figure num shows the distribution of the NUV and FUV excess flux for the different age groups and the median value. The scatter in the FUV ranges from 1.5 – 3 orders of magnitude, similar to SB14. Unlike both SB14 and SS18 where the median values remain constant up until 625 Myr and then distinctly drop off, we see a more gradual decrease in time starting at 100 Myr. SB14 and SS18 see a change in the median FUV value of about 1.5 orders of magnitude for stars with masses 0.35 – 0.6 Msol, whereas for the K stars we see a shift of only 1 order of magnitude. 
+
+For the NUV, the scatter ranges from 1 – 4 orders of magnitude, with the scatter increasing for the older age groups. The uncertainty in stellar ages up to 10 Gyr may cause increased variation among the field stars. The NUV decreases in time by half an order of magnitude, but the slope of the decrease is much more gradual than both that of the FUV and the values obtain stars with masses 0.35 – 0.6 Msol from SB14 and SS18. Unlike the FUV, there is not a distinct decrease in flux density until the age of the Hyades (625 Myr). These trends can be used to predict flux densities for K dwarfs for the NUV and FUV bands. 
+
 
 \begin{figure*}[h]
 \includegraphics[width=\linewidth]{ffdensity_age_NO_J.pdf}
@@ -163,12 +188,36 @@ in section \ref{sec:photometry}
 
 \subsubsection{Scatter}
 
+When comparing the absolute NUV excess to FUV excess, we do not see the same tight correlations as Shkolnik & Barman (2014) nor Schneider & Shkolnik (2018). Instead, we see in Figure num that with increasing mass (i.e. earlier spectral type), the scatter becomes greater and the correlation worsens. We calculated both a Pearson’s R$^2$ statistic and a Spearman Rank correlation value for each mass range (K spectral types) since we did not assume the underlying distribution.  The results can be seen in Figure num. In both tests we see a similar trend, where the highest mass (i.e. earliest spectral type) stars have correlations all < 0.5 and lower mass (i.e. later spectral type) stars have correlations all > 0.5. This trend also appears in Miles and Shkolnik (2016); however, at the time they assumed this was due to small-number statistics. 
+
+The reason for this decrease in correlation with higher mass can be most easily seen in analyzing the model photospheric fluxes in Figure num. In comparing the model values of a single mass from 10 Myr -- 5 Gyr, the photospheric flux density of a 0.6 M$_{\odot}$ star change by no more than a single order of magnitude. However, the flux density of a 1 M$_{\odot}$ star is much more prevalent and changes by as much as four orders of magnitude. The scatter in the FUV excess vs NUV excess then comes from differences in age, whereas the intrinsic scatter of a single age group is much smaller. 
+
+
 \begin{figure*}[h]
 \includegraphics[width=\linewidth]{R2_vs_spt.pdf}
 \caption{Filler image for now. Need to fix scaling. \label{fig:r2_vs_spt}}
 \end{figure*}
 
 \section{X-Ray Evolution}
+
+X-ray flux can be used as a stellar activity diagnosis, as it is suggestive of active stellar atmospheres throughout stars’ lifetimes. 
+
+[Correlations among stellar activity indicators are useful in understanding the formation mechanisms of emission features, energy distributions in the stellar atmosphere, and to allow one activity diagnostic to act as a proxy for another. Should observations of X-ray, FUV, and NUV fluxes correlate with the EUV, then more accurate EUV flux estimates can be obtained.]
+
+What has been seen for K dwarfs?
+
+To compare X-ray and UV data, we cross-referenced our sample of K dwarfs with the Second ROSAT All-Sky Survey Point Source Catalog (2RXS, Boller et al. 2016) with a search radius of 38”, [the 3σ positional error determined by Voges et al. (1999).] We then used the hardness ratio and the count rate to convert to flux $F_X$ in  in erg s−1 cm−2 using the empirical fit of Schmitt et al. (1995). The flux values can be seen in the last column of Table num. 
+
+Table showing numbers input/returned
+[ 
+It is most likely that the non-simultaneity of the observations contributes to the lack of correlation due to the short-term flaring distribution and long-term activity cycles. 
+]
+
+A histogram of the range in X-ray values for each age can be seen in Figure num. The flux for each age ranges from 1-3 orders of magnitude, similar to the NUV and FUV values. Again, the uncertainty in stellar ages up to 10 Gyr may cause increased variation among the field stars. 
+As can be seen in Figure num, the X-ray flux remains steady through the age of Tucana-Horologium (45 Myr) and decreases by the age of AB Doradus (100 Myr), similar to the trend in FUV. In comparing the X-ray medians to those of the NUV and FUV, we see that the X-ray flux dominates during the young ages of the stars, then falls below the NUV values after 650 Myr, a trend also seen in Shkolnik and Barman (2014). 
+
+Unlike Shkolnik and Barman (2014), we again do not see a clear distinction between young X-ray emitters and old emitters when looking at the UV flux compared to the X-ray flux  (Fig num). 
+
 
 \begin{figure*}[h]
 \includegraphics[width=\linewidth]{xray_evolution.pdf}
