@@ -65,32 +65,10 @@ UV radiation can be split into three regimes: the extreme-UV (EUV), the far-UV (
 \begin{figure*}[t]
 \centering
 \includegraphics[width=0.8\linewidth]{massfractions.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:mass_fractions}}
+\caption{Percentages of detected targets compared to the input sample as a function of mass. Groups of similar ages were combined to avoid small number statistics. The low return percentage of Hyades and Praesepe members in the FUV is most likely due to the clusters' further distances of 47pc and 177pc, respectively. \label{fig:mass_fractions}}
 \end{figure*}
 
-\begin{deluxetable*}{c c c c c c c c}[h]
-\tablecaption{\small{Numbers for things . } \label{tab:galexobservations}}
-\tablecolumns{8}
-\tablewidth{0pt}
-\tablehead{
-\colhead{SpT} &
-\colhead{TW Hya} &
-\colhead{$\beta$ Pic} & 
-\colhead{Tuc-Hor} & 
-\colhead{AB Dor} &
-\colhead{UMa} & 
-\colhead{Hyades} & 
-\colhead{Field} \\
-\colhead{} & \colhead{10 Myr} & \colhead{24 Myr} & \colhead{45 Myr} & \colhead{149 Myr} & \colhead{300 Myr} & \colhead{625 Myr} & \colhead{5 Gyr}
-}
-\startdata
-K0 & 1.30 & 0.98 & 0.90 & 0.93 & 0.92 & 0.92 & 0.89\\
-K1 & 1.26 & 0.96 & 0.88 & 0.89 & 0.89 & 0.89 & 0.86\\
-K2 & 1.20 & 0.93 & 0.86 & 0.86 & 0.86 & 0.86 & 0.83\\
-K3 & 1.10 & 0.89 & 0.83 & 0.80 & 0.80 & 0.80 & 0.79\\
-K4 & 0.98 & 0.83 & 0.80 & 0.75 & 0.75 & 0.75 & 0.74\\
-\enddata
-\end{deluxetable*}
+\input{galex}
 
 While current popularity resides among M dwarfs for the most likely to host identifiable habitable planets, excess flaring and tidal locking in the HZ is cause for concern \citep[e.g.][]{Shields2016}. However, attention to K dwarfs is now rising. Both \citet{Heller2014} and \citet{Cuntz2016} identified early and mid-K spectral types as “super-habitable worlds”, analyzing several factors to determine the “Habitable-Planetary-Real-Estate Parameter” (HabPREP): the frequency of different stars, the speed of stellar evolution, the size and timescale of the HZ, UV and X-ray emission and flare frequency and power. As seen in Figure 2, the HabPREP value is at a maximum (i.e. the highest probability of having a habitable planet) in the early-K dwarf regime. Additionally, the longer lifetimes of the continuous HZ of these types of stars compared to F and G stars allow for life to “tune” their environment and develop a more compromising biosignature; however, planets around M dwarfs may lose their atmosphere within 100Myr based on severe UV irradiance \citep{Airapetian2017}. \citet{Lingam2017} find that K6V stars around 0.67M  would take the least amount of time for complex life to develop since increased oxygen levels from UV photolysis permit the emergence of complex life, while more recent work by \citet{Arney2017}
 %vheck arney
@@ -99,20 +77,20 @@ has confirmed that there is a similar “K dwarf advantage” and that a planet 
 \begin{figure*}[h]
 \centering
 \includegraphics[width=.9\linewidth]{massdistributions_nuv.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:massdistributions_nuv}}
+\caption{Mass distributions for the input and returned targets in the NUV for each age group. Light blue represents the input sample, dark blue the detections with no photometric flags, and red the upper limits.  \label{fig:massdistributions_nuv}}
 \end{figure*}
 
 
 \begin{figure*}[h]
 \centering
 \includegraphics[width=.9\linewidth]{massdistributions_fuv.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:massdistributions_fuv}}
+\caption{Same as Figure \ref{fig:massdistributions_nuv} but for the returned FUV targets. \label{fig:massdistributions_fuv}}
 \end{figure*}
 
 \begin{figure*}[th]
 \centering
 \includegraphics[width=0.8\linewidth]{mfd_vs_age.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:mvd_vs_age}}
+\caption{Photospheric FUV and NUV flux densities from the PHOENIX stellar atmosphere models as a function of the ages we consider in this work. Increasing point size represents increasing mass of the star from 0.6 -- 1.0 M$_{\odot}$.  \label{fig:mvd_vs_age}}
 \end{figure*}
 
 
@@ -145,7 +123,7 @@ Due to the low number of K dwarf members in some of the age ranges, we combined 
 \begin{figure*}[t]
 \centering
 \includegraphics[width=0.9\linewidth]{phot_obs.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:phot_obs}}
+\caption{Fraction of the observed NUV and FUV flux densities for which the photosphere contributes as a function of mass (left) and age (right). Fractions above 1 are caused by uncertainties in the stellar mass, age, or model and were taken to be equal to 1. \label{fig:phot_obs}}
 \end{figure*}
 
 \section{GALEX Photometry}\label{sec:photometry}
@@ -168,10 +146,22 @@ Some objects were detected by GALEX but not observed. In this case, we calculate
 
 \begin{figure*}[t]
 \centering
-\includegraphics[width=\linewidth]{ffdensity_age_NO_J.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:ffdensity_age}}
+\includegraphics[width=0.95\linewidth]{ffdensity_age_NO_J.pdf}
+\caption{Absolute NUV (left) and FUV (right) flux density excess (i.e. photosphere-subtracted). The cyan diamonds represent the median values for each age group with the inner quartiles. Upper limits are shown by blue triangles.  \label{fig:ffdensity_age}}
 \end{figure*}
 
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{histfd_NUV.pdf}
+\caption{Histogram of NUV Excess flux densities. Median values are shown by light gray dashed lines. \label{fig:histfd_nuv}}
+\end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{histfd_FUV.pdf}
+\caption{Same as Figure \ref{fig:histfd_nuv} but for FUV Excess. Upper limits are shown in white. \label{fig:histfd_fuv}}
+\end{figure}
 
 \section{Evolution of the Photospheric UV Emission}
 
@@ -211,45 +201,32 @@ For the NUV, the scatter ranges from 1 – 4 orders of magnitude, with the scatt
 
 
 
-% \usepackage{subfig}
-% \begin{figure*}%
-%     \centering
-%     \subfloat{{\includegraphics[height=10cm]{histfd_NO_J.pdf} }}%
-%     \qquad
-%     \subfloat{{\includegraphics[height=10cm]{histfd_xray.pdf} }}%
-%     \caption{2 Figures side by side}%
-%     \label{fig:example}%
-% \end{figure*}
 
 
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=\linewidth]{histfd_NUV.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:histfd}}
-\end{figure}
-
-\begin{figure}[t]
-\centering
-\includegraphics[width=\linewidth]{histfd_FUV.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:histfd}}
-\end{figure}
 
 
 \subsection{The Relationship Between GALEX FUV and NUV for K Stars}
 \subsubsection{FUV $/$ NUV}
 
-\begin{figure}[t]
-\centering
-\includegraphics[width=\linewidth]{nuv_vs_fuv_10_NO_J_Kspt.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:nuv_vs_fuv}}
-\end{figure}
+Not only are the evolutionary trends of NUV Fuv flux densities individually useful, but the ratio of FUV to NUV has been shown to [affect the photochemistry of the atmospheres of exoplanets around low-mass stars (e.g., Domagal-Goldman et al. 2014; Tian et al. 2014; Harman et al. 2015).[notably on the abundances of molecules including CO2, O2, and O3. FUV radiation will photolyze CO2, producing atomic oxygen which can then combine to form O2 and eventually O3. NUV radiation on the other hand will dissociate O3, and thus O3 abundances are critically dependent on fFUV/fNUV values. Therefore, the suggestion of O3 as a potential biomarker (e.g., Kaltenegger et al. 2007) may not be appropriate for M dwarfs. While the fFUV/fNUV ratio has been investigated for several field-age stars (France et al. 2013, 2016), how the fFUV/fNUV ratio changes as an M star evolves has not yet been probed. ]
+
+For stars with both NUV and FUV flux densities, we calculate [Ffuv/Fnuv]G excess flux densities as a function of mass as seen in Figure num. There is no clear trend between the YMG stars, which remain around 10-1 regardless of mass. 
+
+[These larger [fFUV/fNUV]G values for young, early-Ms may have significant consequences on molecular abundances in exoplanet atmo- spheres at young ages. These different evolutionary patterns should be taken into account when modeling the atmospheres of planets orbiting such stars. ]
 
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{fuv_nuv_vs_mass_NO_J.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:fuv_nuv_vs_mass}}
+\caption{FUV/NUV as a function of mass. \label{fig:fuv_nuv_vs_mass}}
 \end{figure}
+
+\begin{figure}[t]
+\centering
+\includegraphics[width=\linewidth]{nuv_vs_fuv_10_NO_J_Kspt.pdf}
+\caption{FUV excess versus NUV excess for different mass bins. The parameters for the best fit lines can be found in Table num. \label{fig:nuv_vs_fuv}}
+\end{figure}
+
+
 
 \subsubsection{NUV vs FUV}
 
@@ -261,7 +238,7 @@ The reason for this decrease in correlation with higher mass can be most easily 
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{R2_vs_spt.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:r2_vs_spt}}
+\caption{Pearson's R$^2$ correlation statistic and Spearman rank correlation for the trends seen in Figure \ref{fig:nuv_vs_fuv}. The top right values are equal to 1 due to low number statistics.  \label{fig:r2_vs_spt}}
 \end{figure}
 
 \section{X-Ray Evolution}
@@ -288,7 +265,7 @@ Unlike Shkolnik and Barman (2014), we again do not see a clear distinction betwe
 \begin{figure}[t]
 \centering
 \includegraphics[width=\linewidth]{xray_evolution.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:xray_evolution}}
+\caption{Same as Figure \ref{fig:ffdensity_age} but for X-ray flux (as compared to flux density). \label{fig:xray_evolution}}
 \end{figure}
 
 \begin{figure}[t]
@@ -300,7 +277,7 @@ Unlike Shkolnik and Barman (2014), we again do not see a clear distinction betwe
 \begin{figure}[t]
 \centering
 \includegraphics[height=0.6\textheight]{histfd_xray.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:histfd_xray}}
+\caption{Same as Figures \ref{fig:histfd_nuv} and \ref{fig:histfd_fuv} but for X-ray flux. \label{fig:histfd_xray}}
 \end{figure}
 
 \section{Summary}
