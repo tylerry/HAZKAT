@@ -1,8 +1,9 @@
 \documentclass[twocolumn]{aastex62}
 
 \usepackage{natbib}
-% \bibliographystyle{apj}
-\bibliographystyle{unsrtnat}
+\usepackage{subcaption}
+\bibliographystyle{apj}
+
 
 \newcommand{\vdag}{(v)^\dagger}
 \newcommand\aastex{AAS\TeX}
@@ -45,26 +46,82 @@ Don't forget proxima flare paper.
 planet occurence rate valuable
 dn / dspt
 
-\begin{figure*}[th]
-\includegraphics[width=\linewidth]{galex_observations.pdf}
-\caption{Filler image for now. Going to make this a table instead. \label{fig:galex_observations}}
-\end{figure*}
+% \begin{figure*}[th]
+% \includegraphics[width=\linewidth]{galex_observations.pdf}
+% \caption{Filler image for now. Going to make this a table instead. \label{fig:galex_observations}}
+% \end{figure*}
+
+
+
 
 \section{The K dwarf Advantage}\label{sec:advantage}
-
 The UV radiation incident on a planet is one of the most important factors in determining if that planet is potentially habitable and if any biosignatures will be detectable. UV radiation ionizes and photodissociates some of the most important molecules for the detection of life, e.g. H2O, CH4, and CO2, with potential for complete erosion \citep[e.g.][]{Kasting1993, Lichtenegger2010, Segura2010, Hu2012}. Additionally, UV radiation can impact the photochemistry of the atmospheres in the production of hazes in depleting atmospheres \citep{Zerkle2012, Arney2017}
 %check which Arney
 and ozone in oxidizing atmospheres \citep{Segura2003, Segura2005}, both of which drastically alter the planetary spectrum. This affects not only the composition, but also the detectability and stability of the atmospheres of these planets. For future missions such as JWST that will focus on spectra, a planet with a hazy or depleted atmosphere will not make a good target.
 
 UV radiation can be split into three regimes: the extreme-UV (EUV), the far-UV (FUV), and the near-UV (NUV). EUV has the capability of additionally heating and inflating a planet’s upper-atmosphere, thus exacerbating and accelerating its erosion \citep{Koskinen2010, Lammer2007}. However, other than very limited data from the EUVE satellite, no information in this wavelength regime exists. These values are extremely important though, since photochemical atmospheric models of HZ planets and abundance rate models require an input of EUV stellar fluxes, currently being extrapolated from a limited number of X-ray observations. Therefore, realistic information regarding the NUV, FUV, and X-ray is of the utmost importance for using models to answer questions regarding planetary atmospheres. 
 
+
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.8\linewidth]{massfractions.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:mass_fractions}}
+\end{figure*}
+
+\begin{deluxetable*}{c c c c c c c c}[h]
+\tablecaption{\small{Numbers for things . } \label{tab:galexobservations}}
+\tablecolumns{8}
+\tablewidth{0pt}
+\tablehead{
+\colhead{SpT} &
+\colhead{TW Hya} &
+\colhead{$\beta$ Pic} & 
+\colhead{Tuc-Hor} & 
+\colhead{AB Dor} &
+\colhead{UMa} & 
+\colhead{Hyades} & 
+\colhead{Field} \\
+\colhead{} & \colhead{10 Myr} & \colhead{24 Myr} & \colhead{45 Myr} & \colhead{149 Myr} & \colhead{300 Myr} & \colhead{625 Myr} & \colhead{5 Gyr}
+}
+\startdata
+K0 & 1.30 & 0.98 & 0.90 & 0.93 & 0.92 & 0.92 & 0.89\\
+K1 & 1.26 & 0.96 & 0.88 & 0.89 & 0.89 & 0.89 & 0.86\\
+K2 & 1.20 & 0.93 & 0.86 & 0.86 & 0.86 & 0.86 & 0.83\\
+K3 & 1.10 & 0.89 & 0.83 & 0.80 & 0.80 & 0.80 & 0.79\\
+K4 & 0.98 & 0.83 & 0.80 & 0.75 & 0.75 & 0.75 & 0.74\\
+\enddata
+\end{deluxetable*}
+
 While current popularity resides among M dwarfs for the most likely to host identifiable habitable planets, excess flaring and tidal locking in the HZ is cause for concern \citep[e.g.][]{Shields2016}. However, attention to K dwarfs is now rising. Both \citet{Heller2014} and \citet{Cuntz2016} identified early and mid-K spectral types as “super-habitable worlds”, analyzing several factors to determine the “Habitable-Planetary-Real-Estate Parameter” (HabPREP): the frequency of different stars, the speed of stellar evolution, the size and timescale of the HZ, UV and X-ray emission and flare frequency and power. As seen in Figure 2, the HabPREP value is at a maximum (i.e. the highest probability of having a habitable planet) in the early-K dwarf regime. Additionally, the longer lifetimes of the continuous HZ of these types of stars compared to F and G stars allow for life to “tune” their environment and develop a more compromising biosignature; however, planets around M dwarfs may lose their atmosphere within 100Myr based on severe UV irradiance \citep{Airapetian2017}. \citet{Lingam2017} find that K6V stars around 0.67M  would take the least amount of time for complex life to develop since increased oxygen levels from UV photolysis permit the emergence of complex life, while more recent work by \citet{Arney2017}
 %vheck arney
 has confirmed that there is a similar “K dwarf advantage” and that a planet orbiting a K6V star has the potential to produce detectable CH4 and O2. K dwarf UV evolution is thus critical for determining planetary habitability.
 
+\begin{figure*}[h]
+\centering
+\includegraphics[width=.9\linewidth]{massdistributions_nuv.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:massdistributions_nuv}}
+\end{figure*}
+
+
+\begin{figure*}[h]
+\centering
+\includegraphics[width=.9\linewidth]{massdistributions_fuv.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:massdistributions_fuv}}
+\end{figure*}
+
+\begin{figure*}[th]
+\centering
+\includegraphics[width=0.8\linewidth]{mfd_vs_age.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:mvd_vs_age}}
+\end{figure*}
+
 
 
 \section{K Dwarf Sample}\label{sec:sample}
+
+
+
+
 
 We consider the young moving groups and clusters ranging in age from 10 Myr to 625 Myr in \citet{Shkolnik2014} and \citet{Schneider2018} as well as three additional associations in the intermediate mass range. The associations included are TW Hydra (10 Myr, \citealt{Bell2015}), Beta Pictoris (22 Myr, \citealt{Shkolnik2017}), Carina (40 Myr, \citealt{Torres2008}), Columba (45 Myr, \citealt{Zuckerman2011}), Tucana-Horologium (45 Myr, \citealt{Bell2015}), AB Doradus (149 Myr, \citealt{Bell2015}), Ursa Majoris (300 Myr, \citealt{King2005}), Praesepe (600 Myr, \citealt{Kraus2007}), and Hyades (625 Myr, \citealt{Perryman1997}), in addition to field stars (taken to be 5 Gyr).
 
@@ -85,6 +142,11 @@ Spectral types are different per age - K0 young is not K0 old. We went with mass
 
 Due to the low number of K dwarf members in some of the age ranges, we combined groups of similar age ranges. We analyze five groups represented for the remainder of this paper by a single member of that age: TW Hydra (TW Hydra and Beta Pictoris), Tucana-Horologium (Tucana-Horologium, Carina, and Columba), AB Doradus (AB Doradus and Ursa Majoris), Hyades (Hyades and Praesepe), and Field stars. 
 
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.9\linewidth]{phot_obs.pdf}
+\caption{Filler image for now. Need to fix scaling. \label{fig:phot_obs}}
+\end{figure*}
 
 \section{GALEX Photometry}\label{sec:photometry}
 
@@ -95,22 +157,8 @@ Since GALEX ran from 2003 to 2012, we proper motion corrected our targets to the
 
 
 
-\begin{figure*}[h]
-\centering
-\includegraphics[width=.9\linewidth]{massdistributions_nuv.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:massdistributions_nuv}}
-\end{figure*}
 
-\begin{figure*}[h]
-\centering
-\includegraphics[width=.9\linewidth]{massdistributions_fuv.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:massdistributions_fuv}}
-\end{figure*}
 
-\begin{figure*}[th]
-\includegraphics[width=\linewidth, height=3in]{massfractions.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:mass_fractions}}
-\end{figure*}
 
 A comparison of the number of objects that were in our input sample, observed by GALEX, and then detected with useful photometry can be seen in Figure \ref{fig:galex_observations}. [comment on these percentages or make a table]
 
@@ -132,20 +180,14 @@ For each of the YMG members and field stars, we subtract the photospheric contri
 
 
 
-
-\begin{figure*}[bh]
-\includegraphics[width=\linewidth]{mfd_vs_age.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:mvd_vs_age}}
-\end{figure*}
-
 \section{Analysis}
 
 
 
-\begin{figure*}[h]
-\includegraphics[width=\linewidth]{phot_obs.pdf}
-\caption{Filler image for now. Need to fix scaling. \label{fig:phot_obs}}
-\end{figure*}
+
+
+
+
 
 \subsection{Evolution of the NUV and FUV Emission}
 
@@ -162,41 +204,59 @@ Figure num shows the distribution of the NUV and FUV excess flux for the differe
 For the NUV, the scatter ranges from 1 – 4 orders of magnitude, with the scatter increasing for the older age groups. The uncertainty in stellar ages up to 10 Gyr may cause increased variation among the field stars. The NUV decreases in time by half an order of magnitude, but the slope of the decrease is much more gradual than both that of the FUV and the values obtain stars with masses 0.35 – 0.6 Msol from SB14 and SS18. Unlike the FUV, there is not a distinct decrease in flux density until the age of the Hyades (625 Myr). These trends can be used to predict flux densities for K dwarfs for the NUV and FUV bands. 
 
 
-\begin{figure*}[h]
+\begin{figure*}[t]
+\centering
 \includegraphics[width=\linewidth]{ffdensity_age_NO_J.pdf}
 \caption{Filler image for now. Need to fix scaling. \label{fig:ffdensity_age}}
 \end{figure*}
 
-\begin{figure*}[h]
+
+% \usepackage{subfig}
+% \begin{figure*}%
+%     \centering
+%     \subfloat{{\includegraphics[height=10cm]{histfd_NO_J.pdf} }}%
+%     \qquad
+%     \subfloat{{\includegraphics[height=10cm]{histfd_xray.pdf} }}%
+%     \caption{2 Figures side by side}%
+%     \label{fig:example}%
+% \end{figure*}
+
+
+
+\begin{figure}[t]
+\centering
 \includegraphics[width=\linewidth]{histfd_NO_J.pdf}
 \caption{Filler image for now. Need to fix scaling. \label{fig:histfd}}
-\end{figure*}
+\end{figure}
 
 
 \subsection{The Relationship Between GALEX FUV and NUV for K Stars}
+\subsubsection{FUV $/$ NUV}
 
-\begin{figure*}[h]
+\begin{figure}[t]
 \centering
-\includegraphics[height=\textheight]{nuv_vs_fuv_10_NO_J_Kspt.pdf}
+\includegraphics[height=0.7\textheight]{nuv_vs_fuv_10_NO_J_Kspt.pdf}
 \caption{Filler image for now. Need to fix scaling. \label{fig:nuv_vs_fuv}}
-\end{figure*}
+\end{figure}
 
-\begin{figure*}[h]
+\begin{figure}[t]
+\centering
 \includegraphics[width=\linewidth]{fuv_nuv_vs_mass_NO_J.pdf}
 \caption{Filler image for now. Need to fix scaling. \label{fig:fuv_nuv_vs_mass}}
-\end{figure*}
+\end{figure}
 
-\subsubsection{Scatter}
+\subsubsection{NUV vs FUV}
 
 When comparing the absolute NUV excess to FUV excess, we do not see the same tight correlations as Shkolnik & Barman (2014) nor Schneider & Shkolnik (2018). Instead, we see in Figure num that with increasing mass (i.e. earlier spectral type), the scatter becomes greater and the correlation worsens. We calculated both a Pearson’s R$^2$ statistic and a Spearman Rank correlation value for each mass range (K spectral types) since we did not assume the underlying distribution.  The results can be seen in Figure num. In both tests we see a similar trend, where the highest mass (i.e. earliest spectral type) stars have correlations all < 0.5 and lower mass (i.e. later spectral type) stars have correlations all > 0.5. This trend also appears in Miles and Shkolnik (2016); however, at the time they assumed this was due to small-number statistics. 
 
 The reason for this decrease in correlation with higher mass can be most easily seen in analyzing the model photospheric fluxes in Figure num. In comparing the model values of a single mass from 10 Myr -- 5 Gyr, the photospheric flux density of a 0.6 M$_{\odot}$ star change by no more than a single order of magnitude. However, the flux density of a 1 M$_{\odot}$ star is much more prevalent and changes by as much as four orders of magnitude. The scatter in the FUV excess vs NUV excess then comes from differences in age, whereas the intrinsic scatter of a single age group is much smaller. 
 
 
-\begin{figure*}[h]
+\begin{figure}[t]
+\centering
 \includegraphics[width=\linewidth]{R2_vs_spt.pdf}
 \caption{Filler image for now. Need to fix scaling. \label{fig:r2_vs_spt}}
-\end{figure*}
+\end{figure}
 
 \section{X-Ray Evolution}
 
@@ -219,26 +279,29 @@ As can be seen in Figure num, the X-ray flux remains steady through the age of T
 Unlike Shkolnik and Barman (2014), we again do not see a clear distinction between young X-ray emitters and old emitters when looking at the UV flux compared to the X-ray flux  (Fig num). 
 
 
-\begin{figure*}[h]
-\includegraphics[width=\linewidth]{xray_evolution.pdf}
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.7\linewidth]{xray_evolution.pdf}
 \caption{Filler image for now. Need to fix scaling. \label{fig:xray_evolution}}
 \end{figure*}
 
-\begin{figure*}[h]
-\includegraphics[width=\linewidth]{uv_vs_xray_NO_J.pdf}
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.7\linewidth]{uv_vs_xray_NO_J.pdf}
 \caption{Filler image for now. Need to fix scaling. \label{fig:uv_vs_xray}}
 \end{figure*}
 
-\begin{figure*}[h]
+\begin{figure}[t]
 \centering
-\includegraphics[height=\textheight]{histfd_xray.pdf}
+\includegraphics[height=0.6\textheight]{histfd_xray.pdf}
 \caption{Filler image for now. Need to fix scaling. \label{fig:histfd_xray}}
-\end{figure*}
+\end{figure}
 
 \section{Summary}
 
-\begin{figure*}[h]
-\includegraphics[width=\linewidth]{planet_timeline_xray.pdf}
+\begin{figure*}[t]
+\centering
+\includegraphics[width=0.8\linewidth]{planet_timeline_xray.pdf}
 \caption{Filler image for now. Need to fix scaling. \label{fig:planet_timeline}}
 \end{figure*}
 
